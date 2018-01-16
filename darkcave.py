@@ -108,13 +108,14 @@ if choice == "Y":
     sanity += 1
     courage += 2
     trust = 1
-    print ("By its delighted expression, you must've gotten it correct. You feel acomplishment as it throws you on its back. You feel safer and more stable!\n")
+    print ("Game > By its delighted expression, you must've gotten it correct. You feel acomplishment as it throws you on its back. You feel safer and more stable!\n")
     print ("Status > +2 Courage [Your courage is now " + str(courage) + "]")
     print ("Status > +1 Sanity [Your sanity is now " + str(sanity) + "]")
     print ("Status > [Special] Trust from pink named creatures")
     #+1 sanity
     #+2 courage
     #+Possible army of Tems --Request--
+    input ("")
   else:
     print ("Game > The creature backs away in horror as you identified it. It seems to be that it hides in the dark. As it disappears, you get a sick feeling in your stomach.")
     input ("")
@@ -151,9 +152,9 @@ elif choice == "N":
     thirst -= 2
     hunger = 2
     print ("Status > -3 Hunger [Your hunger is now " + str(hunger) + "]")
-    print ("Status > -2 Thirst [Your thirst is now " + str(hunger) + "]")
-    print ("Status > -2 Courage [Your courage is now " + str(hunger) + "]")
-    print ("Status > -2 Sanity [Your sanity is now " + str(hunger) + "]")
+    print ("Status > -2 Thirst [Your thirst is now " + str(thirst) + "]")
+    print ("Status > -2 Courage [Your courage is now " + str(courage) + "]")
+    print ("Status > -2 Sanity [Your sanity is now " + str(sanity) + "]")
     print (str(surviven))
     print (str(survivei))
   else:
@@ -161,12 +162,38 @@ elif choice == "N":
     input ("")
     print ("You feel your last moments creeping up to you...")
     time.sleep(2)
-    print ("             GAME OVER             ")
+    print ("\n             GAME OVER             ")
     print (" 'Better footwork is the key' ")
     exit()
-    print (str(surviven))
-    print (str(survivei))
-  
-  
-  
-  
+#                                              #
+#----------------------------------------------#
+# After Y/N choice has been made - continue on #
+#----------------------------------------------#
+#                                              #
+
+if choice == "Y":
+  hunger = 4
+  print ("Game > You continue walking into the dark cave. It's getting more humid as you go farther in!")
+  input ("")
+  print ("You > 'It's too dark and humid to keep trotting along. But if I stop here, I may starve'")
+  input ("")
+  choice2 = input ("Game > You can either stop for safety, or keep going to find food. Type S to stop here and type G to keep going.\n> ")
+  if choice2 == "S":
+    print ("Game > You decide to stop to avoid running into more trouble. You get off the unicorn and sit on the cold stone ground. You feel a sharp object underneath you. As you get up and shine your phone towards it, you see that it's a locked bag.\n")
+    hunger -= 1
+    courage -= 1
+    print ("Status > -1 Courage [Your courage is now " + str(courage) + "]")
+    print ("Status > -1 Hunger [Your courage is now " + str(hunger) + "]")
+    input ("")
+    choice3 = input ("Do you want to open the bag even though it may hurt your fingers trying to pry it open? Type Y to open it and N to leave it be.\n> ")
+    if choice3 == "Y":
+      health -= 2
+      print ("Game > You pry the bag open with your fingers, you feel a small pain in your fingers.\n")
+      print ("Status > -2 Health [Your health is now " + str(health) + "]")
+      input ("Press enter to open the bag\n")
+      fsupply = 1
+      wsupply = 1
+      knife = 1
+      print ("Item > Bread 'A little moldy on the outside'")
+      print ("Item > Bottled Water 'Mmmm... Warm water'")
+      print ("Item > Knife 'Not YET used'")
