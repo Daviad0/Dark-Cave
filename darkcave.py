@@ -48,7 +48,8 @@ while menu == True:
     print ("Error > Please type in S, I, U, or Q!")
     choice = input ("> ")
 print ("Starting Game... ")
-print ("OP Mode Selected")
+print ("\nNOTICE: PLEASE READ THE GITHUB WIKI FOR INFO AND NO CONFUSION ABOUT THE GAME! THERE MAY BE RANDOM EVENTS THAT WILL HAPPEN THAT WILL CHANGE EVERY SINGLE GAME!\n")
+input ("")
 
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 #     Game starts here      |
@@ -111,7 +112,7 @@ if choice == "Y":
     print ("Game > By its delighted expression, you must've gotten it correct. You feel acomplishment as it throws you on its back. You feel safer and more stable!\n")
     print ("Status > +2 Courage [Your courage is now " + str(courage) + "]")
     print ("Status > +1 Sanity [Your sanity is now " + str(sanity) + "]")
-    print ("Status > [Special] Trust from pink named creatures")
+    print ("Status > [Special] Trust from mythical creatures")
     #+1 sanity
     #+2 courage
     #+Possible army of Tems --Request--
@@ -162,7 +163,7 @@ elif choice == "N":
     input ("")
     print ("You feel your last moments creeping up to you...")
     time.sleep(2)
-    print ("\n             GAME OVER             ")
+    print ("             GAME OVER             ")
     print (" 'Better footwork is the key' ")
     exit()
 #                                              #
@@ -196,4 +197,51 @@ if choice == "Y":
       knife = 1
       print ("Item > Bread 'A little moldy on the outside'")
       print ("Item > Bottled Water 'Mmmm... Warm water'")
-      print ("Item > Knife 'Not YET used'")
+      print ("Item > Butter Knife 'Still a little buttery'")
+      hunger += 3
+      print ("Status > +3 Hunger [Your hunger is now " + str(hunger) + "]")
+      ##Add health and also thirst
+      input ("")
+    print ("Game > You sit in this place for what seems like hours, even though it is just 5 minutes. You hear another sound in the distance as your phone light flickers out.")
+    input ("")
+    print ("??? > YaYA")
+    input ("")
+    print ("You > 'What is that... Ehh, it must be my imagination'")
+    input ("")
+    print ("Game > Minutes pass one by one and you can't keep your mind off of that sound that came. You start to feel worried, biting on side of the bag.")
+    input ("")
+    print ("??? > YAH")
+    input ("")
+    print ("Game > A creature comes out of the darkness only to pass you, go back into the darkness, and scare the heeby geebies out of you. You don't know whether to attack it, or leave it be.")
+    input ("")
+    choice3 = input ("Type A to attack or P to leave it be\n> ")
+    if choice3 == "P":
+      print ("Game > You decide to leave it be, but your pet unicorn runs into the darkness to the creature.")
+      input ("")
+      print ("Game > You see sparks in the distance. You can't see what is making the sparks.")
+      input ("")
+      choice4 = input ("Do you want to run in the other direction, or find out what the sparks are from? (Type R to run or I to find out)\n> ")
+      event = randint(1, 2)
+      if str(randint) == "1" and choice4 == "R":
+        print ("Game > You try to run, but falling crush you as you run. You try to regret your choice as you are being turned into a breakfast food.")
+        time.sleep(2)
+        print ("        GAME OVER        ")
+        print (" '*Just a random event*' ")
+        exit()
+      elif str(randint) == "2" and choice4 == "R":
+        print ("Game > You run, leaving your pet unicorn behind. You just need to survive. A guilty feeling overtakes you, as you fall down on the group breathing heavily.")
+        print ("Status > -2 Health [Your health is now " + str(health) + "]")
+        ##Add -Courage and sanity
+      elif str(randint) == "1" and choice4 == "I":
+        print ("Game > You slowly creep forward to the sparks. A bat comes from the darkness and slaps you in the head. You fall to the cold ground, with an aching pain on the side of your cheek.")
+        print ("Status > -3 Health [Your health is now " + str(health) + "]")
+        ##Allow rechoice of the Run or Inspect choice
+      elif str(randint) == "2" and choice4 == "I":
+        print ("Game > You creep closer and closer to the place where the sparks came from. Another bunch of sparks explodes closer than you think they did before. You see your pet unicorn, fighting this creature, which is still undescribable to you.")
+        print ("Game > As a person who doesn't like violence, you want to tame the new creature. ")
+    
+  
+  
+  
+  
+  
