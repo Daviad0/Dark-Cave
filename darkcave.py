@@ -306,3 +306,4 @@ if choice == "Y":
       time.sleep(2)
       print ("")
       print ("Shoutout to Nat (Tem) for making this ending! :3")
+      exit()
