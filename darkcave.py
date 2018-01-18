@@ -17,14 +17,14 @@ class color:
 #print (Style.RESET_ALL) Reset text
 #print ('Hello World !' ) Bold text
 #TODO
-#Unicorns
+#Tem Army
 menu = True
 print ("> Welcome to the Dark Cave!\n")
 print ("> Type S to start" )
 print ("> Type I for info" )
 print ("> Type U for update info")
 print ("> Type Q to quit" )
-choice = input (">>> ")
+choice = input ("> ")
 while menu == True:
   if choice == "S":
     print ("Start Game Selected")
@@ -186,8 +186,8 @@ if choice == "Y":
     print ("Status > -1 Courage [Your courage is now " + str(courage) + "]")
     print ("Status > -1 Hunger [Your courage is now " + str(hunger) + "]")
     input ("")
-    choice3 = input ("Do you want to open the bag even though it may hurt your fingers trying to pry it open? Type Y to open it and N to leave it be.\n> ")
-    if choice3 == "Y":
+    bag = input ("Do you want to open the bag even though it may hurt your fingers trying to pry it open? Type Y to open it and N to leave it be.\n> ")
+    if bag == "Y":
       health -= 2
       print ("Game > You pry the bag open with your fingers, you feel a small pain in your fingers.\n")
       print ("Status > -2 Health [Your health is now " + str(health) + "]")
@@ -263,3 +263,46 @@ if choice == "Y":
           print ("Game > The tem speaks to you again in its high pitched voice.")
           input ("")
           print ("Tem > HoOmAN sTUcK. TeM cAN hElP.")
+          input ("")
+          print ("Game > Once again, you feel weird talking to a creature, but it may be your only way out.")
+          input ("")
+          print ("You > Ok...")
+          input ("")
+          print ("Game > You wait as the 'Tem' runs back into the darkness.")
+          input ("")
+    elif choice3 == "A":
+      if bag == "Y":
+        print ("Game > You grab your water bottle and slash the creature across the face, its head turning on impact.")
+        input ("")
+      else:
+        print ("Game > You whap the creature in the face with your hand, trying to hurt it. Its head turns on impact.")
+        input ("")
+      print ("Game > It turns back to face you, its smile still plastered on its face. You can still see it's white fur bristle.")
+      time.sleep(1)
+      print ("Game > Then, without warning, it screams.")
+      input ("")
+      print ("??? > TeMs")
+      time.sleep(1)
+      print ("??? > BAkuP")
+      input ("")
+      print ("Game > Out of the darkness, shapes appear and begin to creep towards you. They step out of the shadows, revealing 50 more of these assumed 'Tems'.")
+      input ("")
+      print ("Game > You step back, sweating, to hear a warning snarl. Turning to look behind you, you see around 50 more closing in on you.")
+      input ("")
+      print ("Game > Glancing around, you see no escape.")
+      input ("")
+      print ("TeM > HooMaN No GuD *growls*")
+      input ("")
+      print ("TeM > TeMs!!!")
+      time.sleep(2)
+      print ("TeM > Atak!!!")
+      input ("")
+      print ("The Tems swarm forward, leaping and climbing over each other to get to you.")
+      input ("")
+      print ("Soon, you can hardly see over all the Tems on you, pulling you to the ground. The scratching and biting becomes too much and the white fur blurs together to make a blinding light.")
+      time.sleep(1)
+      print ("        GAME OVER        ")
+      print ("   'NeVr hit a TEM!!!'   ")
+      time.sleep(2)
+      print ("")
+      print ("Shoutout to Nat (Tem) for making this ending! :3")
