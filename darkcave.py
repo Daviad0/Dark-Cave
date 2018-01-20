@@ -230,12 +230,17 @@ if choice == "Y":
         exit()
       elif str(event) == "2" and choice4 == "R":
         print ("Game > You run, leaving your pet unicorn behind. You just need to survive. A guilty feeling overtakes you, as you fall down on the group breathing heavily.")
-        print ("Status > -2 Health [Your health is now " + str(health) + "]")
-        ##Add -Courage and sanity
+        courage -= 2
+        sanity -= 2
+        print ("Status > -2 Courage [Your courage is now " + str(courage) + "]")
+        print ("Status > -2 Sanity [Your sanity is now " + str(sanity) + "]")
+        ##Continue
       elif str(event) == "1" and choice4 == "I":
+        health -= 3
         print ("Game > You slowly creep forward to the sparks. A bat comes from the darkness and slaps you in the head. You fall to the cold ground, with an aching pain on the side of your cheek.")
         print ("Status > -3 Health [Your health is now " + str(health) + "]")
-        ##Allow rechoice of the Run or Inspect choice
+        input ("")
+        print ("Game > With that bat scaring you, you decide to leave the area.")
       elif str(event) == "2" and choice4 == "I":
         print ("Game > You creep closer and closer to the place where the sparks came from. Another bunch of sparks explodes closer than you think they did before. You see your pet unicorn, fighting this creature, which is still undescribable to you.")
         input ("")
@@ -265,11 +270,20 @@ if choice == "Y":
           print ("Tem > HoOmAN sTUcK. TeM cAN hElP.")
           input ("")
           print ("Game > Once again, you feel weird talking to a creature, but it may be your only way out.")
+          time.sleep(1)
+          print ("Status > [Special] Tem")
           input ("")
           print ("You > Ok...")
           input ("")
           print ("Game > You wait as the 'Tem' runs back into the darkness.")
           input ("")
+          print ("Game > Time passes and you still don't see the 'Tem' again.")
+          input ("")
+          print ("Game > You hear a sound, then more sounds, then lots more sounds surrounding you.")
+          input ("")
+          final = input ("Game > Do you want to hide or face all of the sounds that seem to be coming to you? (Type H to hide and F to face the sounds)\n> ")
+          exit()
+          ##CONTINUE HERE
     elif choice3 == "A":
       if bag == "Y":
         print ("Game > You grab your water bottle and slash the creature across the face, its head turning on impact.")
