@@ -4,3 +4,4 @@ No other programs required
 
 The web version is available at https://repl.it/@DaveedDigs/DarkCave-GitHub-Version
 # Special Thanks To:
+All of the helpers that help with the game:
