@@ -1,3 +1,4 @@
+##SUPPORT ENDER 1/24/18
 from random import *
 import time
 import colorama
