@@ -8,6 +8,7 @@ All of the helpers that help with the game:
  - Nat K (Storyboarder of a HUGE ending) (Suggestor of Features)
  - K.N (Suggestor of Features)
  - Fritz G. (Contributer)
+ - Evan W. (Contributer)
  - All gamers who play and support this game :D
  
 # HELP WANTED
