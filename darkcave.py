@@ -35,10 +35,7 @@ while menu == True:
     input ("Press enter to start > ")
     menu = False
   elif choice == "U":
-    print ("Update info: Last Updated 01/15/18")
-    print ("> Released OP version 1.1\n> Released DAL version D.1.2\n> Removed DEV and ALPHA versions to reduce code bugs and to increase productivity\n> Started accepting personal requests for versions 1.1+ and DAL D.2.0\n Added 2 death endings")
-    print ("<<Future Update Info>>\n> More endings to win or die\n> Pictures to go along with scenarios")
-    print ("Requests to be/that are implemented: ACCEPTING REQUESTS\n> Unicorns! Requested by: Nat and Kel! ANNOUNCED: D.1.1")
+    print ("**Please go to the GitHub to get updates as they come! https://github.com/HDLOfficial/Dark-Cave")
     input ("Press Enter To Continue")
     menu = False
   elif choice == "Q":
@@ -282,8 +279,33 @@ if choice == "Y":
           print ("Game > You hear a sound, then more sounds, then lots more sounds surrounding you.")
           input ("")
           final = input ("Game > Do you want to hide or face all of the sounds that seem to be coming to you? (Type H to hide and F to face the sounds)\n> ")
-          exit()
-          ##CONTINUE HERE
+          if final == "H":
+            print ("Game > You scramble to find a hiding place. You feel safer that you are not in danger anymore from the many sounds that were coming to you.")
+          elif final == "F":
+            print ("Game > You decide to face the sounds coming for you, in the chance that they are friendly creatures.")
+            input ("")
+            rocks = randint(1,2)
+            if str(rocks) == "1":
+              print ("Game > You finally see the first glances of the creatures. You see that it is a 'tem', and another 'tem', annnd another 'tem'. There is an army of about 50 'tems' surrounding you.")
+              print ("TeMs > TeMs s...")
+              time.sleep(2)
+              print ("Game > Right as the 'tems' start to speak, rocks from above crush you!")
+              print ("TeMs > NuuUuU")
+              time.sleep(2)
+              print ("      GAME OVER       ")
+              print ("   'Random Events!'   ")
+              exit()
+            elif str(rocks) == "2":
+              print ("Game > You finally see the first glances of the creatures. You see that it is a 'tem', and another 'tem', annnd another 'tem'. There is an army of about 50 'tems' surrounding you.")
+              input ("")
+              print ("TeMs > TeMs sAVe!!!")
+              input ("")
+              print ("Game > The 'tems' move closer to you. You now feel very worried and scared. Are they actually helping you?")
+              input ("")
+              print ("Game > They suddenly leap forward to you. Normally you would shreak, but you feel trust in these creatues.")
+        else:
+          print ("Incorrect")
+          ##Continue
     elif choice3 == "A":
       if bag == "Y":
         print ("Game > You grab your water bottle and slash the creature across the face, its head turning on impact.")
