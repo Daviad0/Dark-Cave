@@ -143,6 +143,7 @@ elif choice == "N":
       input ("")
     else:
       input ("")
+    print ("Game > You sit down against the rock wall, sweating.")
   elif survivei == "N":
     print ("Game > Cowardly actions overpower you as you back away from underneath the berries. You wonder if that was the right choice as you sit on the side of the cave, super hungry and thirsty.\n")
     sanity -= 2
@@ -153,8 +154,6 @@ elif choice == "N":
     print ("Status > -2 Thirst [Your thirst is now " + str(thirst) + "]")
     print ("Status > -2 Courage [Your courage is now " + str(courage) + "]")
     print ("Status > -2 Sanity [Your sanity is now " + str(sanity) + "]")
-    print (str(surviven))
-    print (str(survivei))
   else:
     print ("Game > As you try to jump up to where the berries are sitting, your foot slips on a wet rock. As you fall down from a height, your life flashes be your eyes. You hit the cold hard ground, breathing heavily, you close your eyes trying to avoid the pain.")
     input ("")
@@ -338,19 +337,18 @@ if choice == "Y":
                     time.sleep(1)
                   print ("Credits:")
                   time.sleep(.3)
-                  print ("Operations Director >>> DaveedDigs")
+                  print ("Operations Lead >>> DaveedDigs")
                   time.sleep(.3)
-                  print ("Operations Director >>> DaveedDigs")
+                  print ("Storyboard Lead >>> NatK")
                   time.sleep(.3)
-                  print ("Operations Director >>> DaveedDigs")
+                  print ("Finisher Storyboarder >>> FrtizG")
                   time.sleep(.3)
-                  print ("Operations Director >>> DaveedDigs")
+                  print ("Suggestor >>> KN")
                   time.sleep(.3)
-                  print ("Operations Director >>> DaveedDigs")
-                  ##PUT REAL CREDITS
+                  exit()
         else:
-          print ("Incorrect")
-          ##Continue
+          print ("Game > The creature steps back quickly in horror")
+          ##Continue not die
     elif choice3 == "A":
       if bag == "Y":
         print ("Game > You grab your water bottle and slash the creature across the face, its head turning on impact.")
