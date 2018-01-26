@@ -414,7 +414,6 @@ if choice == "Y":
                   input ("")
                   exit()
                   
->>>>>>> a6b3718f5731a1c70d5d0968c5eacc6b5e19d51a
         else:
           print ("Game > The creature steps back quickly in horror")
           ##Continue not die
