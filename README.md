@@ -16,4 +16,4 @@ We need help with making this game! Please contact HDLOfficial if you are intere
  - Cavian Member (Leadership Board)
  - Miner (Developer)
  - Microphone Holder (Dialogue Storyboarder)
- - Pyscic (Idea Storyboarder)
+ - Physic (Idea Storyboarder)

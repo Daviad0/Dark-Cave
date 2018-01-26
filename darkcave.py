@@ -17,7 +17,8 @@ class color:
 #print (Style.RESET_ALL) Reset text
 #print ('Hello World !' ) Bold text
 #TODO
-#Tem Army
+#Code in No section of going into the cave more
+#Code in Yes section after doing everything correctly and random events
 menu = True
 print ("> Welcome to the Dark Cave!\n")
 print ("> Type S to start" )
@@ -84,7 +85,7 @@ while valid == True:
     print ("Game > You decide to stay behind waiting for someone to notice that you are gone. As you wait, you kick the wall in frustration and rocks from above fall down. They hit you in the head and knock you out.\n")
     print ("Status > -2 Courage [Your courage is now " + str(courage) + "]")
     print ("Status > -2 Sanity [Your sanity is now " + str(sanity) + "]")
-    print ("Status > -4 Heath [Your health is now " + str(health) + "]")
+    print ("Status > -4 Health [Your health is now " + str(health) + "]")
     valid = False
     input ("")
   else:
@@ -154,6 +155,10 @@ elif choice == "N":
     print ("Status > -2 Thirst [Your thirst is now " + str(thirst) + "]")
     print ("Status > -2 Courage [Your courage is now " + str(courage) + "]")
     print ("Status > -2 Sanity [Your sanity is now " + str(sanity) + "]")
+<<<<<<< HEAD
+=======
+    input ("")
+>>>>>>> a6b3718f5731a1c70d5d0968c5eacc6b5e19d51a
   else:
     print ("Game > As you try to jump up to where the berries are sitting, your foot slips on a wet rock. As you fall down from a height, your life flashes be your eyes. You hit the cold hard ground, breathing heavily, you close your eyes trying to avoid the pain.")
     input ("")
@@ -162,11 +167,36 @@ elif choice == "N":
     print ("             GAME OVER             ")
     print (" 'Better footwork is the key' ")
     exit()
-#                                              #
-#----------------------------------------------#
-# After Y/N choice has been made - continue on #
-#----------------------------------------------#
-#                                              #
+  print ("Game > You sit against the wall again, just waiting for a miracle to happen.")
+  input ("")
+  print ("Game > Suddenly you see a creature appear from the cave. It does not look nice.")
+  input ("")
+  fight = input ("Game > Would you like to fight, play dead, or run (Type F to fight, D to play dead, and R to run)\n> ")
+  if fight == "F":
+    print ("Fight")
+    ##Continue Fighting Technique
+  elif fight == "D":
+    print ("Game > Playing dead seems like the most logical option at this point. You flop down on the ground, hurting your arm.")
+    input ("")
+    react = input ("Game > Do you want to treat the sore on your arm or leave it be (Type T to treat the sore or L to leave it be)")
+    if react == "T":
+      print ("Game > You decide to treat the sore before it really hurts you. Careful that the creature doesn't spot movement, you act like the movement is gravity.\n")
+      health += 1
+      print ("Status > +1 Health [Your health is now " + str(health) + "]")
+    elif react == "L":
+      print ("Game > You leave the sore be, knowing that the creature may spot that you are alive if you try to guard your arm from the rigid rock.\n")
+      health -= 2
+      print ("Status > -2 Health [Your health is now " + str(health) + "]")
+  elif fight == "R":
+    print ("Game > You choose the cowardly path of running into the cave to survive.")
+    input ("")
+    ##Continue on a elif statement, 1st indent, choice P
+    choice = "P"
+#                                                #
+#------------------------------------------------#
+# After Y/N/P choice has been made - continue on #
+#------------------------------------------------#
+#                                                #
 
 if choice == "Y":
   hunger = 4
@@ -345,7 +375,49 @@ if choice == "Y":
                   time.sleep(.3)
                   print ("Suggestor >>> KN")
                   time.sleep(.3)
+<<<<<<< HEAD
                   exit()
+=======
+                  print ("Operations Director >>> DaveedDigs")
+                  ##PUT REAL CREDITS
+                  input ("")
+                  exit()
+                else:
+                  print ("Game > It seems crazy, too crazy to believe. You are just glad that you are not trapped anymore")
+                  input ("")
+                  print ("Game > You lay down on the cool grass of the forest. It starts sprinkling and you decide to get up.")
+                  input ("")
+                  print ("Game > You start walking back to your home and you hear a crunch of the few leaves on the ground.")
+                  input ("")
+                  print ("Game > You look behind you and there is nothing there. You shrug it off thinking there are better things to do than think about what jsut happened.")
+                  time.sleep(2)
+                  print ("You Win!")
+                  print ("You got the 'Lost in my Mind' ending")
+                  time.sleep(3)
+                  ending = input("Game > Do you want to see the choices that affected your ending a lot? (Type Y for yes and N for no)\n> ")
+                  if ending == "Y":
+                    print ("Choices that affected your game:")
+                    print ("Going into the cave (Y)\n")
+                    print ("Thank you for playing Dark Cave!")
+                  else:
+                    print ("Thank you for playing Dark Cave!")
+                    time.sleep(1)
+                  print ("Credits:")
+                  time.sleep(.3)
+                  print ("Operations Director >>> DaveedDigs")
+                  time.sleep(.3)
+                  print ("Operations Director >>> DaveedDigs")
+                  time.sleep(.3)
+                  print ("Operations Director >>> DaveedDigs")
+                  time.sleep(.3)
+                  print ("Operations Director >>> DaveedDigs")
+                  time.sleep(.3)
+                  print ("Operations Director >>> DaveedDigs")
+                  ##PUT REAL CREDITS
+                  input ("")
+                  exit()
+                  
+>>>>>>> a6b3718f5731a1c70d5d0968c5eacc6b5e19d51a
         else:
           print ("Game > The creature steps back quickly in horror")
           ##Continue not die
@@ -386,3 +458,5 @@ if choice == "Y":
       print ("")
       print ("Shoutout to Nat (Tem) for making this ending! :3")
       exit()
+elif choice == "P":
+  print ("Partial Cave Enterance")
