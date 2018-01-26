@@ -375,10 +375,7 @@ if choice == "Y":
                   time.sleep(.3)
                   print ("Suggestor >>> KN")
                   time.sleep(.3)
-<<<<<<< HEAD
                   exit()
-=======
-                  print ("Operations Director >>> DaveedDigs")
                   ##PUT REAL CREDITS
                   input ("")
                   exit()
