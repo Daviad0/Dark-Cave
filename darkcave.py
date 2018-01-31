@@ -1,3 +1,9 @@
+#########################################
+#              DEV Test                 #
+#           -  Complete!  -             #
+#             Bugs occur!               #
+#########################################
+
 from random import *
 import time
 class color:
@@ -144,7 +150,6 @@ elif choice == "N":
       input ("")
     else:
       input ("")
-    print ("Game > You sit down against the rock wall, sweating.")
   elif survivei == "N":
     print ("Game > Cowardly actions overpower you as you back away from underneath the berries. You wonder if that was the right choice as you sit on the side of the cave, super hungry and thirsty.\n")
     sanity -= 2
@@ -155,10 +160,7 @@ elif choice == "N":
     print ("Status > -2 Thirst [Your thirst is now " + str(thirst) + "]")
     print ("Status > -2 Courage [Your courage is now " + str(courage) + "]")
     print ("Status > -2 Sanity [Your sanity is now " + str(sanity) + "]")
-<<<<<<< HEAD
-=======
     input ("")
->>>>>>> a6b3718f5731a1c70d5d0968c5eacc6b5e19d51a
   else:
     print ("Game > As you try to jump up to where the berries are sitting, your foot slips on a wet rock. As you fall down from a height, your life flashes be your eyes. You hit the cold hard ground, breathing heavily, you close your eyes trying to avoid the pain.")
     input ("")
@@ -183,10 +185,24 @@ elif choice == "N":
       print ("Game > You decide to treat the sore before it really hurts you. Careful that the creature doesn't spot movement, you act like the movement is gravity.\n")
       health += 1
       print ("Status > +1 Health [Your health is now " + str(health) + "]")
+      input ("")
+      print ("Game > It looks shocked and moves forward slowly.")
+      input ("")
+      print ("Game > The creature stops at you, wondering what happened when you moved.")
     elif react == "L":
       print ("Game > You leave the sore be, knowing that the creature may spot that you are alive if you try to guard your arm from the rigid rock.\n")
       health -= 2
       print ("Status > -2 Health [Your health is now " + str(health) + "]")
+      input ("")
+      print ("Game > The creature comes closer to you. Step by step it growls.")
+      input ("")
+      print ("Game > You start to worry, your heart pounding as it walks inches from you.")
+      input ("")
+      print ("Game > It smells you, looking like it's checking if you are alive.")
+      input ("")
+      print ("Game > It backs away causiously, making sure you are still not alive")
+      input ("")
+      #Continue
   elif fight == "R":
     print ("Game > You choose the cowardly path of running into the cave to survive.")
     input ("")
@@ -367,15 +383,15 @@ if choice == "Y":
                     time.sleep(1)
                   print ("Credits:")
                   time.sleep(.3)
-                  print ("Operations Lead >>> DaveedDigs")
+                  print ("Operations Director >>> DaveedDigs")
                   time.sleep(.3)
-                  print ("Storyboard Lead >>> NatK")
+                  print ("Operations Director >>> DaveedDigs")
                   time.sleep(.3)
-                  print ("Finisher Storyboarder >>> FrtizG")
+                  print ("Operations Director >>> DaveedDigs")
                   time.sleep(.3)
-                  print ("Suggestor >>> KN")
+                  print ("Operations Director >>> DaveedDigs")
                   time.sleep(.3)
-                  exit()
+                  print ("Operations Director >>> DaveedDigs")
                   ##PUT REAL CREDITS
                   input ("")
                   exit()
@@ -415,8 +431,8 @@ if choice == "Y":
                   exit()
                   
         else:
-          print ("Game > The creature steps back quickly in horror")
-          ##Continue not die
+          print ("Incorrect")
+          ##Continue
     elif choice3 == "A":
       if bag == "Y":
         print ("Game > You grab your water bottle and slash the creature across the face, its head turning on impact.")
